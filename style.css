@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper {
+    border: 5px solid black;
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+canvas {        
+    background-image: url(img/background5.jpg)
+
+}
+
+#overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#background3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#leaves_left {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+}
+
+#leaves_right {   
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    
+}
+
+
+canvas:hover ~ #leaves_left {   
+    left: -150px;
+}
+
+canvas:hover ~ #leaves_right {       
+    left: -150px;
+    
+}
+
+ #player1,#background3, #alien_enemy, #alien_enemy_2, #alien_enemy_3, #bullet, #collisionAnimation, #background_over, #background_over_2, #lives, #background_win, #background_win_w {
+    display: none;
+}
